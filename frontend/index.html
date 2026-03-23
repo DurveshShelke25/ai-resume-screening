@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Screening</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🔷 Navbar -->
+<nav class="navbar">
+    <h2>AI Resume Screener</h2>
+</nav>
+
+<!-- 🔷 Main Container -->
+<div class="main">
+    <div class="card">
+
+        <h1>Upload Resume</h1>
+
+        <label>Job Description</label>
+        <textarea id="job" placeholder="Enter skills like Python, SQL, ML..."></textarea>
+
+        <label class="upload-box">
+            <input type="file" id="resume" hidden>
+            <span id="file-name">📄 Choose Resume (PDF)</span>
+        </label>
+
+        <button onclick="uploadResume()">Analyze Resume</button>
+
+        <div id="result" class="result-box"></div>
+
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
